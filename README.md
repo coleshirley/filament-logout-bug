@@ -20,7 +20,7 @@ This process occurs after the user has already been logged out of the applicatio
 
 The solution to this problem is to always check if there is a currently authenticated user or not in either of the above methods when necessary like so:
 
-```php
+```diff
 public static function canAccess(): bool
 {
 -    return auth()->user()->can('canAccessThing');
