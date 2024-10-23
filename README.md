@@ -27,3 +27,9 @@ public static function canAccess(): bool
 +    return auth()->check() && auth()->user()->can('canAccessThing');
 }
 ```
+
+### Relevant Demo files
+
+app/Providers/Filament/AdminPanelProvider.php
+app/Providers/Filament/AppPanelProvider.php
+app/Filament/App/Pages/Dashboard.php
