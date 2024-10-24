@@ -8,8 +8,8 @@ use Filament\Pages\Page;
 class Dashboard extends PagesDashboard
 {
 
-    public static function canAccess(): bool
-    {
-        return auth()->user()->can('canAccessThing');
-    }
+    // public static function canAccess(): bool
+    // {
+    //     return auth()->user()->can('canAccessThing');
+    // }
 }
